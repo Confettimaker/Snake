@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	  <title>Snake</title>
+		<style>
+	    body {
+		  background:gray;
+	    }
+		#points {
+			float:right;
+			font-size:2em;
+		}
+		</style>
+		
+		
+		<body>
+		  
+		  <canvas id="canvas" style="margin-left:15%;border:2px solid blue;" width="600" height="600"></canvas>
+		  <h2 id="points"><button onclick="main();this.style.opacity = 0;document.getElementById('points').innerHTML = 'Score: ' + snake.points + '<br />Snake length: ' + snake.startLength;">Start</button></h2>
+		  <button onclick="location.reload();">Restart</button><button onclick="graphicalDecay = !graphicalDecay;">Enable graphical decay</button>
+		  
+		  
+		</body>
+		
+		<script src="js/snake.js"></script>
+
+
+</html>
